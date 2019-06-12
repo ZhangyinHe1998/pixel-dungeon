@@ -43,9 +43,9 @@ public class Wraith extends Mob {
 		spriteClass = WraithSprite.class;
 		
 		HP = HT = 1;
-		EXP = 0;
+		EXP = 9;
 		
-		flying = true;
+		flying = false;
 	}
 	
 	private static final String LEVEL = "level";
@@ -65,7 +65,7 @@ public class Wraith extends Mob {
 	
 	@Override
 	public int damageRoll() {
-		return Random.NormalIntRange( 1, 3 + level );
+		return Random.NormalIntRange( 0, 1 );
 	}
 	
 	@Override
