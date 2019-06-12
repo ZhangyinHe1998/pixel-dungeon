@@ -261,7 +261,7 @@ public class Hero extends Char {
 		}
 		float accuracy = (bonus == 0) ? 1 : (float)Math.pow( 1.4, bonus );
 		if (rangedWeapon != null && Level.distance( pos, target.pos ) == 1) {
-			accuracy *= 0.5f;
+			accuracy *= 0.8f;
 		}
 		
 		KindOfWeapon wep = rangedWeapon != null ? rangedWeapon : belongings.weapon;
