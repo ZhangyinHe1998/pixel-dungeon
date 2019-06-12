@@ -46,7 +46,7 @@ public class Gold extends Item {
 	}
 	
 	public Gold() {
-		this( 1 );
+		this( 99 );
 	}
 	
 	public Gold( int value ) {
