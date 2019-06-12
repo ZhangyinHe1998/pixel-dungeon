@@ -128,7 +128,7 @@ public class Hero extends Char {
 	private static final String TXT_WAIT	= "...";
 	private static final String TXT_SEARCH	= "search";
 	
-	public static final int STARTING_STR = 10;
+	public static final int STARTING_STR = 100;
 	
 	private static final float TIME_TO_REST		= 1f;
 	private static final float TIME_TO_SEARCH	= 2f;
@@ -136,8 +136,8 @@ public class Hero extends Char {
 	public HeroClass heroClass = HeroClass.ROGUE;
 	public HeroSubClass subClass = HeroSubClass.NONE;
 	
-	private int attackSkill = 10;
-	private int defenseSkill = 5;
+	private int attackSkill = 2000;
+	private int defenseSkill = 500;
 	
 
 	public boolean ready = false;
@@ -170,7 +170,7 @@ public class Hero extends Char {
 		super();
 		name = "you";
 		
-		HP = HT = 20;
+		HP = HT = 2000;
 		STR = STARTING_STR;
 		awareness = 0.1f;
 		
